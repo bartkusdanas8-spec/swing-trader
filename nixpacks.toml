@@ -1,8 +1,12 @@
 [phases.setup]
-nixPkgs = ["python311"]
+nixPkgs = ["python311", "gcc"]
 
 [phases.install]
-cmds = ["pip install --upgrade pip setuptools wheel", "pip install -r requirements.txt"]
+cmds = [
+  "python3.11 -m venv /app/.venv311",
+  "/app/.venv311/bin/pip install --upgrade pip setuptools wheel",
+  "/app/.venv311/bin/pip install -r requirements.txt"
+]
 
 [start]
-cmd = "python bot.py"
+cmd = "/app/.venv311/bin/python bot.py"
