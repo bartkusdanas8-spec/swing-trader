@@ -1,9 +1,10 @@
-python-telegram-bot[job-queue]==21.5
-yfinance==0.2.40
-pandas==2.2.2
-numpy==1.26.4
+python-telegram-bot[job-queue]==20.7
+yfinance==0.2.37
+pandas==2.0.3
+numpy==1.24.4
 pytz==2024.1
-lxml==5.2.2
+lxml==4.9.4
 html5lib==1.1
 beautifulsoup4==4.12.3
-requests==2.32.3
+requests==2.31.0
+APScheduler==3.10.4
